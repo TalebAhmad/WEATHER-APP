@@ -10,8 +10,8 @@ function loadWeather(){
 	//dynamic path
 	var zip=document.getElementById('zip').value;
 	if (zip == '') {zip="E3B4C3"}
-	var conditionsPath="http://api.wunderground.com/api/112919b37609d3de/conditions/q/"+zip+".json";
-	var forecastPath="http://api.wunderground.com/api/112919b37609d3de/forecast/q/"+zip+".json";
+	var conditionsPath="https://api.wunderground.com/api/112919b37609d3de/conditions/q/"+zip+".json";
+	var forecastPath="https://api.wunderground.com/api/112919b37609d3de/forecast/q/"+zip+".json";
 // GET THE CONDITIONS
 weatherConditions.open('GET', conditionsPath, true);
 weatherConditions.responseType = 'text';
